@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASHISH SHARMA Voice
+     Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Floating gradient orbs -->
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">
+        <span class="logo">AV</span>
+        <span class="brand-text">ASHISH SHARMA voice </span>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#demos">Demos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#equipment">Equipment</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="btn btn-primary">Book a Call</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero container">
+    <div class="hero-left">
+      <h1 class="reveal">Fresh Voice. Tech Precision.</h1>
+      <p class="reveal delay-1">
+        Indian male voice artist with a clean, friendly, and versatile tone for ads, explainers, apps, and e‑learning, crafted with an engineer’s attention to clarity and timing. Available worldwide with quick turnaround. 
+      </p>
+      <div class="hero-ctas reveal delay-2">
+        <a href="#demos" class="btn btn-primary"><i class="fa-solid fa-headphones"></i> Listen Demos</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-calendar"></i> Book a Call</a>
+      </div>
+      <ul class="hero-bullets reveal delay-3">
+        <li><i class="fa-solid fa-circle-check"></i> Neutral/Indian English, Hindi, Hinglish</li>
+        <li><i class="fa-solid fa-circle-check"></i> Commercials • Explainers • E‑learning • App UI</li>
+        <li><i class="fa-solid fa-circle-check"></i> 24–48h delivery • 2 free revisions</li>
+      </ul>
+    </div>
+    <div class="hero-right">
+      <div class="mic-card float">
+        <i class="fa-solid fa-microphone-lines mic-icon"></i>
+        <p>Studio‑ready sound • Noise‑treated space</p>
+      </div>
+      <div class="wave-card shimmer">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demos -->
+  <section id="demos" class="section container">
+    <div class="section-head">
+      <h2>Voice Demos</h2>
+      <p>Upload and organize voice samples by category; they persist locally for quick showcasing.</p>
+    </div>
+
+    <div class="upload glass">
+      <div class="upload-grid">
+        <input type="file" id="fileInput" accept="audio/*" multiple />
+        <input type="text" id="demoTitle" placeholder="Title e.g., Soft Conversational Ad" />
+        <select id="demoCategory">
+          <option value="commercial">Commercial</option>
+          <option value="explainer">Explainer</option>
+          <option value="elearning">E‑learning</option>
+          <option value="app-ux">App / UI</option>
+          <option value="character">Character</option>
+          <option value="ivr">IVR / On‑Hold</option>
+        </select>
+        <input type="text" id="demoTags" placeholder="Tags (comma separated e.g., warm, upbeat, 120bpm)" />
+        <textarea id="demoDesc" rows="2" placeholder="Short description…"></textarea>
+        <button class="btn btn-primary" id="uploadBtn"><i class="fa-solid fa-cloud-arrow-up"></i> Upload</button>
+      </div>
+      <div class="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="commercial">Commercial</button>
+        <button class="chip" data-filter="explainer">Explainer</button>
+        <button class="chip" data-filter="elearning">E‑learning</button>
+        <button class="chip" data-filter="app-ux">App / UI</button>
+        <button class="chip" data-filter="character">Character</button>
+        <button class="chip" data-filter="ivr">IVR</button>
+      </div>
+    </div>
+
+    <div id="demoGrid" class="grid"></div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section container">
+    <div class="section-head">
+      <h2>Services & Packages</h2>
+      <p>Flexible options for startups, creators, and agencies—ideal for first projects and pilot runs.</p>
+    </div>
+    <div class="cards">
+      <article class="card glass pop">
+        <h3><i class="fa-solid fa-bullhorn"></i> Commercial</h3>
+        <p>15–60s ads for YouTube, Insta, and OTT with clean, bright delivery.</p>
+        <ul class="ticks">
+          <li>1 script up to 90 words</li>
+          <li>48h delivery</li>
+          <li>2 revisions</li>
+        </ul>
+        <div class="price">₹2,500+</div>
+      </article>
+      <article class="card glass pop">
+        <h3><i class="fa-solid fa-chalkboard-user"></i> Explainer</h3>
+        <p>Product explainers and app walkthroughs with tech‑savvy clarity.</p>
+        <ul class="ticks">
+          <li>Up to 150 words</li>
+          <li>48–72h delivery</li>
+          <li>2 revisions</li>
+        </ul>
+        <div class="price">₹4,000+</div>
+      </article>
+      <article class="card glass pop">
+        <h3><i class="fa-solid fa-graduation-cap"></i> E‑learning</h3>
+        <p>Courses and modules with consistent tone, correct pacing, and diction.</p>
+        <ul class="ticks">
+          <li>Per finished minute</li>
+          <li>Glossary adherence</li>
+          <li>No background noise</li>
+        </ul>
+        <div class="price">₹800/min</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Niches -->
+  <section class="section container">
+    <div class="section-head">
+      <h2>Niches & Styles</h2>
+      <p>Conversational, warm, informative, corporate, energetic, friendly mentor, and calm guide.</p>
+    </div>
+    <div class="chips-wrap">
+      <span class="tag">Neutral Indian English</span>
+      <span class="tag">Hindi • Hinglish</span>
+      <span class="tag">Gen‑Z Casual</span>
+      <span class="tag">Corporate Clean</span>
+      <span class="tag">Friendly Tech Explainers</span>
+      <span class="tag">App Micro‑copy</span>
+    </div>
+  </section>
+
+  <!-- Equipment -->
+  <section id="equipment" class="section container">
+    <div class="section-head">
+      <h2>Studio & Gear</h2>
+      <p>Quiet, treated space with consistent levels and clean edits for plug‑and‑play use.</p>
+    </div>
+    <div class="cards">
+      <article class="card glass">
+        <h3><i class="fa-solid fa-microphone"></i> Microphone</h3>
+        <p>Large‑diaphragm condenser with pop‑filter for crisp presence and warmth.</p>
+      </article>
+      <article class="card glass">
+        <h3><i class="fa-solid fa-sliders"></i> Interface & DAW</h3>
+        <p>Audio interface + Adobe Audition/Reaper, light de‑noise, de‑ess, and level match.</p>
+      </article>
+      <article class="card glass">
+        <h3><i class="fa-solid fa-house-signal"></i> Booth</h3>
+        <p>Acoustic treatment panels and isolation for consistent noise floor.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section container">
+    <div class="section-head">
+      <h2>about ASHISH </h2>
+      <p>Engineer and hardcore coder transitioning into voice acting—detail‑oriented, reliable, and fast‑learning.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-left glass">
+        <h3>Why work together</h3>
+        <ul class="ticks">
+          <li>Clear diction in English/Hindi with natural pacing</li>
+          <li>Understands scripts, product UX, and technical terminology</li>
+          <li>Collaborative mindset with quick iteration cycles</li>
+        </ul>
+      </div>
+      <div class="about-right glass">
+        <h3>Background</h3>
+        <p>Full‑stack MERN developer building video platforms and educational tools; brings process discipline, versioning, and QA habits to VO work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials (starter placeholders) -->
+  <section class="section container">
+    <div class="section-head">
+      <h2>Testimonials</h2>
+      <p>Early feedback from demo collaborations and pilot projects.</p>
+    </div>
+    <div class="cards">
+      <article class="card glass small">
+        <p>“Clean delivery, easy to direct, and fast turnaround. Great for product explainers.”</p>
+        <span class="who">Startup Founder</span>
+      </article>
+      <article class="card glass small">
+        <p>“Natural tone with crisp pronunciation—exactly what we needed for e‑learning.”</p>
+        <span class="who">Course Producer</span>
+      </article>
+      <article class="card glass small">
+        <p>“Professional communication and flexible revisions on tight timelines.”</p>
+        <span class="who">Agency PM</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section container">
+    <div class="section-head">
+      <h2>FAQ</h2>
+      <p>Quick answers for first‑time collaborations and pilot gigs.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>What’s the delivery time?</summary>
+        <p>Most short scripts: 24–48 hours. Larger projects depend on length and format.</p>
+      </details>
+      <details>
+        <summary>Do you provide revisions?</summary>
+        <p>Yes, 2 rounds on tone/pace/pronunciation if the script remains the same.</p>
+      </details>
+      <details>
+        <summary>Audio format?</summary>
+        <p>WAV 24‑bit/48 kHz or MP3 320 kbps; filenames and takes labeled clearly.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container">
+    <div class="section-head">
+      <h2>Let’s Collaborate</h2>
+      <p>Share the script and usage; a custom sample can be recorded for fit.</p>
+    </div>
+    <div class="contact glass">
+      <div class="contact-info">
+        <div class="line"><i class="fa-solid fa-envelope"></i> asmuna9173@gmail.com</div>
+        <div class="line"><i class="fa-solid fa-phone"></i> +91-9549433902</div>
+        <div class="line"><i class="fa-brands fa-linkedin"></i> <a href="//www.linkedin.com/in/ashish-sharma-4b358b35a/">Ashish3902</a></div>
+        <div class="line"><i class="fa-brands fa-github"></i><a href=" https://github.com/Ashish3902" >AAHU</a></div>
+      </div>
+      <form id="contactForm">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <select>
+          <option value="">Project Type</option>
+          <option value="commercial">Commercial</option>
+          <option value="explainer">Explainer</option>
+          <option value="elearning">E‑learning</option>
+          <option value="app-ux">App / UI</option>
+          <option value="ivr">IVR</option>
+        </select>
+        <textarea rows="4" placeholder="Script length, tone, deadline…"></textarea>
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send</button>
+      </form>
+    </div>
+    <p class="footnote">Open to internships, pilot gigs, and revenue‑share projects.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 ASHISH SHARMA • Voice. Built with love and clean code.</p>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
